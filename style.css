@@ -1,0 +1,47 @@
+header {
+    padding: 10px;
+    margin: auto;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+body {
+    padding:0;
+    margin:0;
+    font-family:Georgia, 'Times New Roman', Times, serif    
+}
+
+div {
+    margin-left: 15px;
+}
+
+input {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#totalMonthly {
+    /* position:absolute; */
+    float:right;
+    margin-right: 20px;
+}
+
+table {
+    border: solid;
+}
+
+tbody {
+    border: solid;
+}
+
+th {
+    border: solid;
+}
+
+tr {
+    border: solid;
+}
+
+td {
+    border: solid;
+}
