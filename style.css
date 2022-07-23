@@ -5,6 +5,10 @@ header {
     text-align: center;
 }
 
+#warning {
+    color: red;
+}
+
 body {
     padding:0;
     margin:0;
@@ -20,14 +24,18 @@ input {
     margin-right: 5px;
 }
 
-#totalMonthly {
-    /* position:absolute; */
-    float:right;
-    margin-right: 20px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
 }
 
-table {
-    border: solid;
+col {
+    width: 20%;
+}
+
+table, tbody, th, td {
+    border: 1px solid;
 }
 
 tbody {
@@ -35,13 +43,18 @@ tbody {
 }
 
 th {
-    border: solid;
-}
-
-tr {
-    border: solid;
+    text-align: left;
 }
 
 td {
-    border: solid;
+    text-align: center;
+}
+
+
+
+#totalMonthly {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin-right:20px;
 }
