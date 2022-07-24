@@ -51,7 +51,7 @@ function entable() {
         <td>` + lName + `</td>
         <td>` + eid + `</td>
         <td>` + title + `</td>
-        <td class="${String(eid)}">` + annualSalary + `</td>
+        <td id="${String(eid)}">` + annualSalary + `</td>
         <td> <button class="${String(eid)}">Delete</button> </td>
     </tr> `);
 
@@ -62,6 +62,8 @@ function entable() {
     // $('#titleIn').val('');
     // $('#annualSalaryIn').val('');
 
+    // $('#' + eid).data('thisSal', annualSalary);
+    
     // Call monthly cost calc function
     sumMonthly(annualSalary);
 }
@@ -86,11 +88,15 @@ function sumMonthly(yearSal) {
 function removeEmp() {
     // console.log('delete pushed');
     let x = ($(this).attr('class'));
+    let thisSal = $('#' + x).text();
     // console.log(x);
-    $('.' + x).remove();
+    // console.log(thisSal);
+    let toSub = (thisSal / 12);
     let oldTotal = $('#totalMonthly').text();
-    let newTotal = oldTotal - monthTotal;
+    let newTotal = Math.ceil(oldTotal - toSub);
     $('#totalMonthly').text(newTotal);
-    return monthTotal;
-
+    if (Number(newTotal) < 20000) {
+        $('#totalMonthly').css("background-color", "white");
+    }
+    $('.' + x).remove();
 }

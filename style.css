@@ -25,13 +25,9 @@ input {
 }
 
 table {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
     table-layout: fixed;
-}
-
-col {
-    width: 20%;
 }
 
 table, tbody, th, td {
@@ -43,7 +39,7 @@ tbody {
 }
 
 th {
-    text-align: left;
+    text-align: center;
 }
 
 td {
