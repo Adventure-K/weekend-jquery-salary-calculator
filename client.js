@@ -56,11 +56,11 @@ function entable() {
     </tr> `);
 
     // Clear input fields
-    // $('#fNameIn').val('');
-    // $('#lNameIn').val('');
-    // $('#idIn').val('');
-    // $('#titleIn').val('');
-    // $('#annualSalaryIn').val('');
+    $('#fNameIn').val('');
+    $('#lNameIn').val('');
+    $('#idIn').val('');
+    $('#titleIn').val('');
+    $('#annualSalaryIn').val('');
 
     // $('#' + eid).data('thisSal', annualSalary);
     
